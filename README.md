@@ -9,9 +9,9 @@
 
 ## To check your logs use:
 
-    tl /magnetopath/var/log/system.log
-    tl /magnetopath/var/log/exception.log
-    tl /var/log/apache2/error.log
+    cd /magnetopath/var/log/ && tl system.log
+    cd /magnetopath/var/log/ && tl exception.log
+    cd /var/log/apache2/ && tl error.log
 
 ### Big thanks to armandino for TxtStyle:
 https://github.com/armandino/TxtStyle
