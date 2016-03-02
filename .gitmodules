@@ -1,0 +1,3 @@
+[submodule "TxtStyle"]
+	path = TxtStyle
+	url = https://github.com/armandino/TxtStyle.git
