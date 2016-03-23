@@ -3,11 +3,11 @@
 ![Preview - system.log](http://i.imgur.com/oYOtur5.png)
 
 ## Instruction
-    git clone <clone_url>
-    cd <clone_path>
-    cd <somedirectory_in_your_PATH> && ln -s <clone_path>/MagentoLogs/TxtStyle/txts
-    cd <somedirectory_in_your_PATH> && ln -s <clone_path>/MagentoLogs/tl
-    cd ~ && ln -s <clone_path>/.txts.conf
+    git clone https://github.com/versedi/MagentoLogsTailColorizer.git
+    cd MagentoLogsTailColorizer
+    cd <somedirectory_in_your_PATH> && ln -s MagentoLogsTailColorizer/TxtStyle/txts
+    cd <somedirectory_in_your_PATH> && ln -s MagentoLogsTailColorizer/tl
+    cd ~ && ln -s MagentoLogsTailColorizer/.txts.conf
 
 ## To check your logs use:
 
