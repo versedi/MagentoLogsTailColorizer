@@ -1,5 +1,7 @@
 # Magento Logs Tail Colorizer
 
+![Preview - system.log](http://i.imgur.com/oYOtur5.png)
+
 ## Instruction
     git clone <clone_url>
     cd <clone_path>
