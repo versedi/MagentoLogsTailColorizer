@@ -15,13 +15,13 @@ alias decgrep="GREP_COLOR='1;31' grep -E --color=always --line-buffered"
 
 echo $1
 if [ "$1" = "system.log" ]; then
-  #tail -1000f $1 | cyan-grep "info|INFO|$" | yellow-grep "warn|warning|WARN|$" | red-grep "error.*|[ERROR].*|[:error].*|[FATAL].*|$"
   tail -1000f $1 | txts -n magento
 elif [ "$1" = "exception.log" ]; then
-tail -1000f $1 | txts -n magentoexception
-#    tail -1000f $1 | cyan-grep "info|INFO|with message.* in |$" | yellow-grep "warn|warning|WARN|Stack trace:|$|" | red-grep "Mage::throwException.*|ERR.*|exception.*|$" | grey-grep "/home/.*php|$|php\(*\)|$"
+    tail -1000f $1 | txts -n magentoexception
 elif [ "$1" = "error.log" ]; then
     tail -1000f $1 | txts -n apache
+elif [ "$1" = "codeigniter.log" ]; then
+    tail -1000f $1 | txts -n codeigniter
 else
     tail -1000f $1 | txts -n universal
 fi
