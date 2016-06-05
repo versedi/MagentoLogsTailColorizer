@@ -20,7 +20,7 @@ elif [ "$1" = "exception.log" ]; then
     tail -1000f $1 | txts -n magentoexception
 elif [ "$1" = "error.log" ]; then
     tail -1000f $1 | txts -n apache
-elif [ "$1" = "codeigniter.log" ]; then
+elif [[ "$1" = *".php"* ]]; then
     tail -1000f $1 | txts -n codeigniter
 else
     tail -1000f $1 | txts -n universal
