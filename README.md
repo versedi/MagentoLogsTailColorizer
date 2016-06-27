@@ -11,7 +11,7 @@ Universal styling also contains most popular log messages so should do it's job 
 
 ## Instruction
     git clone https://github.com/versedi/MagentoLogsTailColorizer.git
-    cd MagentoLogsTailColorizer
+    cd MagentoLogsTailColorizer && git submodule init && git submodule update
     cd <somedirectory_in_your_PATH> && ln -s MagentoLogsTailColorizer/TxtStyle/txts
     cd <somedirectory_in_your_PATH> && ln -s MagentoLogsTailColorizer/tl
     cd ~ && ln -s MagentoLogsTailColorizer/.txts.conf
